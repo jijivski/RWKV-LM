@@ -141,3 +141,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+RWKV-v4neo/try_debug.py
+RWKV-v4neo/calc_1031/run_rwkv-51.py
+RWKV-v4neo/calc_1031/run.py
+RWKV-v4neo/calc_1101/rec_python.py
+RWKV-v4neo/calc_1101/run.py
+RWKV-v4neo/ctx_2048_6_192_wandb/run.py
+RWKV-v4neo/ctx_512_12_128_wandb/rec_string.py
+RWKV-v4neo/ctx_512_12_128_wandb/run.py
+RWKV-v4neo/ctx_512_8_64/rec_python.py
+RWKV-v4neo/ctx_512_8_64/run.py
+RWKV-v4neo/ctx_512_8_64_wandb/run.py
+RWKV-v4neo/ctx_768_12_128_wandb/run.py
+RWKV-v4neo/calc_1031/readme.md

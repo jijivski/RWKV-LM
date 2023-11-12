@@ -1,5 +1,17 @@
 ########################################################################################################
 # The RWKV Language Model - https://github.com/BlinkDL/RWKV-LM
+
+'''# must set shuffle=False, persistent_workers=False (because worker is in another thread)
+data_loader = DataLoader(train_data, shuffle=False, pin_memory=True, batch_size=args.micro_bsz, num_workers=1,
+                         persistent_workers=False, drop_last=True)
+
+trainer.fit(model, data_loader)
+这个文件是一个main的函数，然后在里面使用了linghtning的Trainer实例化了一个trainer，然后使用生成了内容
+
+
+'''
+
+
 ########################################################################################################
 
 import logging
@@ -381,3 +393,4 @@ if __name__ == "__main__":
     data_loader = DataLoader(train_data, shuffle=False, pin_memory=True, batch_size=args.micro_bsz, num_workers=1, persistent_workers=False, drop_last=True)
 
     trainer.fit(model, data_loader)
+

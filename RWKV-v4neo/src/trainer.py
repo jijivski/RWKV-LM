@@ -1,4 +1,13 @@
+'''
+这里没有实际的运行，就是纯粹的 方法 输入args（是一个type.namespace()
+然后定义了 train_callbakc pl的Callback函数 ，解决了什么样的功能，？这个四个函数是什么
+然后最后是一个生成正常的weight
+
+
+'''
+
 import os, math, time, datetime, subprocess
+
 import torch
 from torch.utils.data import DataLoader
 import pytorch_lightning as pl

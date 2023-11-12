@@ -53,7 +53,7 @@ if os.environ["RWKV_FLOAT_MODE"] == "bf16":
             assert T <= T_MAX
             assert B * C % min(C, 32) == 0
             w = -torch.exp(w.float().contiguous())
-            u = u.contiguous()
+            u = u.contiguous().bfloat16()
             k = k.contiguous()
             v = v.contiguous()
             y = torch.empty((B, T, C), device=w.device, memory_format=torch.contiguous_format, dtype=torch.bfloat16)
